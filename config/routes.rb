@@ -1,7 +1,8 @@
 FakebookV1::Application.routes.draw do
-  get 'frontend/:template' => 'frontend#show'
-
-  get 'frontend(/index)' => 'frontend#index'
+  get "hello_world/index"
+  
+  get "outra" => 'hello_world#index'
+  get "teste2" => 'hello_world#teste'
 
   get "frontend/index"
 
