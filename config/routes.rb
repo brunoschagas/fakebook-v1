@@ -1,4 +1,6 @@
 FakebookV1::Application.routes.draw do
+  resources :posts
+
   get "hello_world/index"
   
   get "outra" => 'hello_world#index'
